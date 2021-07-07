@@ -10,12 +10,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main)
-
 
         val botaoCacular = btnCalcular
         val resumo = txtResumo
@@ -24,31 +24,44 @@ class MainActivity : AppCompatActivity() {
         
         botaoCacular.setOnClickListener {
 
-            val nota1 = Integer.parseInt(n1.text.toString())
-            val nota2 = Integer.parseInt(n2.text.toString())
-            val falta = Integer.parseInt(faltas.text.toString())
+            try {
 
-            val media = (nota1 + nota2)/2
+                val nota1 = Integer.parseInt(n1.text.toString())
+                val nota2 = Integer.parseInt(n2.text.toString())
+                val falta = Integer.parseInt(faltas.text.toString())
 
-            if (media >= 7 && falta <= 10){
+                val media = (nota1 + nota2)/2
 
-                resumo.setText("Parabéns você foi :")
-                resultado.setText("Aprovado!!")
-                dados.setText("Nota final: " + media + "\nFaltas: "+ falta)
+                if ((nota1 >= 0 && nota1 <= 10) && (nota2 >= 0 && nota2 <= 10 ) && falta >=0 ){
+                    if (media >= 7 && falta <= 10){
 
-                resultado.setTextColor(Color.GREEN)
+                        resumo.setText("Parabéns você foi :")
+                        resultado.setText("Aprovado!!")
+                        dados.setText("Nota final: " + media + "\nFaltas: "+ falta)
+
+                        resultado.setTextColor(Color.GREEN)
 
 
 
 
-            }else{
+                    }else{
 
-                resumo.setText("Infelizmente você foi :")
-                resultado.setText("Reprovado!!")
-                dados.setText("Nota final: " + media + "\nFaltas: "+ falta)
+                        resumo.setText("Infelizmente você foi :")
+                        resultado.setText("Reprovado!!")
+                        dados.setText("Nota final: " + media + "\nFaltas: "+ falta)
 
+                        resultado.setTextColor(Color.RED)
+
+                    }
+
+                }
+
+            }catch (e: Exception){
+                resumo.setText("Insira corretamente os dados.")
+                resultado.setText("Notas em uma escala de 0 a 10!!")
+                dados.setText("Faltas maiores ou igual a 0 !")
                 resultado.setTextColor(Color.RED)
-
+                dados.setTextColor(Color.RED)
             }
         }
         
