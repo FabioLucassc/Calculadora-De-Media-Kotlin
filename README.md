@@ -8,7 +8,7 @@ O App consiste em um projeto simples para verificar se um aluno está APROVADO o
 
 
 
-<img src="https://user-images.githubusercontent.com/62105051/124852261-706b0c80-df7a-11eb-869e-b2b386fd3219.jpg" alt="Tela Inicial Do App" width="259" height="550" />
+<p align="center"> <img src="https://user-images.githubusercontent.com/62105051/124852261-706b0c80-df7a-11eb-869e-b2b386fd3219.jpg" alt="Tela Inicial Do App" width="259" height="550" /> <p>
 
 
 
@@ -20,7 +20,7 @@ Para determinar se o aluno é **APROVADO ou REPROVADO ** é necessário atender 
 
   
 
-<img src="https://user-images.githubusercontent.com/62105051/124853579-7b26a100-df7c-11eb-938d-15d5ce3a5acb.jpg" alt="Aluno Aprovado" width="259" height="550"/>
+<p align="center"> <img src="https://user-images.githubusercontent.com/62105051/124853579-7b26a100-df7c-11eb-938d-15d5ce3a5acb.jpg" alt="Aluno Aprovado" width="259" height="550"/> <p>
 
 
 
@@ -28,4 +28,5 @@ Para determinar se o aluno é **APROVADO ou REPROVADO ** é necessário atender 
 
   
 
-<img src="https://user-images.githubusercontent.com/62105051/124853840-ebcdbd80-df7c-11eb-8416-464df750d53d.jpg" alt="Aluno Reprovado" width="259" height="550"/>
+<p align="center"> <img src="https://user-images.githubusercontent.com/62105051/124853840-ebcdbd80-df7c-11eb-8416-464df750d53d.jpg" alt="Aluno Reprovado" width="259" height="550"/> <p>
+
