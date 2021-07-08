@@ -33,7 +33,7 @@ Para determinar se o aluno é **APROVADO ou REPROVADO** é necessário atender o
   
   
 
-- **REPROVADO** - caso não atenda o critério da nota **OU** critérios do número de faltas:
+- **REPROVADO** - caso não atenda o critério da nota **OU** os critérios de número de faltas:
 
   
   
